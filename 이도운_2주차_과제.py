@@ -34,6 +34,7 @@ def myReverse(string):
     # your code
     newString = string[::-1]
     return(newString)
+string = input("Enter a word: ")
 
 # 문제 8번
 def letMeIntroduceMyself():
@@ -44,6 +45,7 @@ def letMeIntroduceMyself():
     birthday = input("생일을 입력하시오(예시: 020508): ")
     month = birthday[2:4]
     day = birthday[4:6]
+    print(("제 이름은 {0}입니다. 제 취미는 {1}이구요. 저는 {2}를 다니고 있습니다.제 생일은 {3}월 {4}일 입니다.").format(name, hobby, univ, month, day))
     return ("제 이름은 {0}입니다. 제 취미는 {1}이구요. 저는 {2}를 다니고 있습니다.제 생일은 {3}월 {4}일 입니다.").format(name, hobby, univ, month, day) 
 
 # 문제 9번
@@ -52,4 +54,5 @@ def calcAI():
     a = int(input("Enter 'a' as integer number: "))
     b = int(input("Enter 'b' as integer number: "))
     Sum = a + b
+    print(("두 수의 합은 {0}입니다.").format(Sum))
     return ("두 수의 합은 {0}입니다.").format(Sum)
